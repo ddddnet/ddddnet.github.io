@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://ddddnet.github.io</id>
+    <title>叮叮叮当</title>
+    <updated>2025-01-26T13:34:09.207Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://ddddnet.github.io"/>
+    <link rel="self" href="https://ddddnet.github.io/atom.xml"/>
+    <subtitle>@叮当网络</subtitle>
+    <logo>https://ddddnet.github.io/images/avatar.png</logo>
+    <icon>https://ddddnet.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2025, 叮叮叮当</rights>
+    <entry>
+        <title type="html"><![CDATA[小蚁一代摄像机 夜视版 系统文件以及hack破解]]></title>
+        <id>https://ddddnet.github.io/post/xiao-yi-yi-dai-she-xiang-ji-ye-shi-ban-xi-tong-wen-jian-yi-ji-hack-po-jie/</id>
+        <link href="https://ddddnet.github.io/post/xiao-yi-yi-dai-she-xiang-ji-ye-shi-ban-xi-tong-wen-jian-yi-ji-hack-po-jie/">
+        </link>
+        <updated>2025-01-26T13:32:02.000Z</updated>
+        <content type="html"><![CDATA[<h2 id="小蚁720p-夜视版介绍">小蚁720P 夜视版介绍</h2>
+<figure data-type="image" tabindex="1"><img src="https://ddddnet.github.io/post-images/1737898389629.png" alt="" loading="lazy"></figure>
+<h2 id="仓库更新地址">仓库更新地址</h2>
+<p>https://github.com/ddddnet/yi-cam-home.git</p>
+<h2 id="使用方法">使用方法</h2>
+<ul>
+<li>准备一个sd卡</li>
+<li>将sd卡格式化为fat32格式</li>
+<li>将本项目的home文件拷贝到sd卡根目录下</li>
+<li>将sd卡插入到小蚁摄像机中</li>
+<li>连接电源等待即可</li>
+</ul>
+<h2 id="hack教程">Hack教程</h2>
+<ul>
+<li>破解小蚁智能摄像机启用telnet，ftp，rtsp教程
+<ul>
+<li>https://www.bilibili.com/opus/917411804785672199</li>
+</ul>
+</li>
+<li>夜视版破解telnet
+<ul>
+<li>https://bbs.hassbian.com/thread-9549-1-1.html</li>
+</ul>
+</li>
+<li>yi-hack
+<ul>
+<li>https://github.com/fritz-smh/yi-hack/</li>
+</ul>
+</li>
+</ul>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Windows 批处理指令]]></title>
+        <id>https://ddddnet.github.io/post/windows-pi-chu-li-zhi-ling/</id>
+        <link href="https://ddddnet.github.io/post/windows-pi-chu-li-zhi-ling/">
+        </link>
+        <updated>2025-01-19T10:54:52.000Z</updated>
+        <content type="html"><![CDATA[<p><code>cmd /k</code> 展示命令行窗口</p>
+<p>实例:一键push到git</p>
+<pre><code class="language-jsx">@echo off
+cd D:\apache-jmeter-4.0\bin\wms_performance   #wms_performance为本地git仓库目录
+git add .   #直接执行git命令
+git commit -m 'perfromanceTest'
+git push -u origin master
+</code></pre>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Mkdocs常用命令]]></title>
+        <id>https://ddddnet.github.io/post/mkdocs-chang-yong-ming-ling/</id>
+        <link href="https://ddddnet.github.io/post/mkdocs-chang-yong-ming-ling/">
+        </link>
+        <updated>2025-01-19T10:53:54.000Z</updated>
+        <content type="html"><![CDATA[<h2 id="mkdocs常用命令">Mkdocs常用命令</h2>
+<ul>
+<li><code>mkdocs new [dir-name]</code> - Create a new project.</li>
+<li><code>mkdocs serve</code> - Start the live-reloading docs server.</li>
+<li><code>mkdocs build</code> - Build the documentation site.</li>
+<li><code>mkdocs gh-deploy</code> - 将网站部署到github pages.</li>
+</ul>
+<h2 id="github-actions-自动部署">Github Actions 自动部署</h2>
+<pre><code>name: site
+
+on: # 触发条件
+  push:
+    branches:
+      - main # 根据实际的分支情况设置
+
+permissions: # 权限
+  contents: write
+
+jobs: # 流程
+  deploy:
+    runs-on: ubuntu-latest # 运行环境
+    steps:
+      - uses: actions/checkout@v3 # 检出代码
+      - uses: actions/setup-python@v4 # 安装 Python
+        with:
+          python-version: 3.x
+      - run: pip install mkdocs-material 
+      - run: mkdocs gh-deploy --force
+
+</code></pre>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Markdown基础语法]]></title>
+        <id>https://ddddnet.github.io/post/markdown-ji-chu-yu-fa/</id>
+        <link href="https://ddddnet.github.io/post/markdown-ji-chu-yu-fa/">
+        </link>
+        <updated>2025-01-19T10:53:12.000Z</updated>
+        <content type="html"><![CDATA[<h2 id="1-标题">1. 标题</h2>
+<pre><code class="language-markdown"># 一级标题
+## 二级标题
+### 三级标题
+#### 四级标题
+##### 五级标题
+###### 六级标题
+</code></pre>
+<h2 id="2-强调">2. 强调</h2>
+<pre><code class="language-markdown">*斜体文本* 或 _斜体文本_
+**粗体文本** 或 __粗体文本__
+***粗斜体文本*** 或 ___粗斜体文本___
+</code></pre>
+<h2 id="3-列表">3. 列表</h2>
+<pre><code class="language-markdown">无序列表：
+* 项目1
+* 项目2
+  * 子项目2.1
+  * 子项目2.2
+
+有序列表：
+1. 第一项
+2. 第二项
+3. 第三项
+</code></pre>
+<h2 id="4-链接和图片">4. 链接和图片</h2>
+<pre><code class="language-markdown">[链接文本](URL)
+![图片替代文本](图片URL)
+</code></pre>
+<h2 id="5-引用">5. 引用</h2>
+<pre><code class="language-markdown">&gt; 这是一个引用
+&gt;&gt; 这是嵌套引用
+</code></pre>
+<h2 id="6-代码">6. 代码</h2>
+<pre><code class="language-markdown">`行内代码`
+
+</code></pre>
+<p>代码块<br>
+可以包含多行代码</p>
+<pre><code>
+```python
+# 指定编程语言
+def hello():
+    print(&quot;Hello World!&quot;)
+</code></pre>
+<h2 id="7-表格">7. 表格</h2>
+<pre><code class="language-markdown">| 表头1 | 表头2 |
+| ----- | ----- |
+| 单元格1 | 单元格2 |
+| 单元格3 | 单元格4 |
+</code></pre>
+<h2 id="8-分割线">8. 分割线</h2>
+<pre><code class="language-markdown">---
+或
+***
+或
+___
+</code></pre>
+<h2 id="9-任务列表">9. 任务列表</h2>
+<pre><code class="language-markdown">- [x] 已完成任务
+- [ ] 未完成任务
+</code></pre>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Git常用命令]]></title>
+        <id>https://ddddnet.github.io/post/git-chang-yong-ming-ling/</id>
+        <link href="https://ddddnet.github.io/post/git-chang-yong-ming-ling/">
+        </link>
+        <updated>2025-01-19T10:45:40.000Z</updated>
+        <content type="html"><![CDATA[<p>一些Git常用命令</p>
+<h2 id="git-命令">Git 命令</h2>
+<ul>
+<li><code>echo &quot;# command&quot; &gt;&gt; [README.md](http://readme.md/)</code></li>
+<li><code>git init</code></li>
+<li><code>git add [README.md](http://readme.md/)</code></li>
+<li><code>git commit -m &quot;first commit&quot;</code></li>
+<li><code>git branch -M main</code></li>
+<li><code>git remote add origin https://xxx</code></li>
+<li><code>git push -u origin main</code></li>
+</ul>
+<h2 id="切换分支并推送">切换分支并推送</h2>
+<pre><code class="language-bash">git checkout -b release/v1
+git push origin release/v1
+</code></pre>
+<h2 id="git代理">Git代理</h2>
+<ul>
+<li>全局代理</li>
+</ul>
+<pre><code class="language-bash">git config --global http.proxy http://127.0.0.1:1080
+git config --global https.proxy https://127.0.0.1:1080
+</code></pre>
+<ul>
+<li>取消代理</li>
+</ul>
+<pre><code class="language-bash">git config --global --unset http.proxy
+git config --global --unset https.proxy
+</code></pre>
+<ul>
+<li>查看已有配置</li>
+</ul>
+<pre><code class="language-bash">git config --global -l
+</code></pre>
+<h2 id="gitignore的使用">gitignore的使用</h2>
+<p>在工作区新建一个名称为<code>.gitignore</code>的文件</p>
+<pre><code># dir 不需要提交的目录
+/node_modules
+​
+# file 不需要提交的文件
+config.ini
+​
+# log 不需要提交的任意包含后缀名为log的文件
+*.log
+​
+# Package Files 不需要提交的任意包含后缀名为jar的文件
+*.jar
+</code></pre>
+<pre><code>#               表示此为注释,将被Git忽略
+*.a             表示忽略所有 .a 结尾的文件
+!lib.a          表示但lib.a除外
+/TODO           表示仅仅忽略项目根目录下的 TODO 文件，不包括 subdir/TODO
+build/          表示忽略 build/目录下的所有文件，过滤整个build文件夹；
+doc/*.txt       表示会忽略doc/notes.txt但不包括 doc/server/arch.txt
+ 
+bin/:           表示忽略当前路径下的bin文件夹，该文件夹下的所有内容都会被忽略，不忽略 bin 文件
+/bin:           表示忽略根目录下的bin文件
+/*.c:           表示忽略cat.c，不忽略 build/cat.c
+debug/*.obj:    表示忽略debug/io.obj，不忽略 debug/common/io.obj和tools/debug/io.obj
+**/foo:         表示忽略/foo,a/foo,a/b/foo等
+a/**/b:         表示忽略a/b, a/x/b,a/x/y/b等
+!/bin/run.sh    表示不忽略bin目录下的run.sh文件
+*.log:          表示忽略所有 .log 文件
+config.php:     表示忽略当前路径的 config.php 文件
+ 
+/mtk/           表示过滤整个文件夹
+*.zip           表示过滤所有.zip文件
+/mtk/do.c       表示过滤某个具体文件
+ 
+被过滤掉的文件就不会出现在git仓库中（gitlab或github）了，当然本地库中还有，只是push的时候不会上传。
+ 
+需要注意的是，gitignore还可以指定要将哪些文件添加到版本管理中，如下：
+!*.zip
+!/mtk/one.txt
+ 
+唯一的区别就是规则开头多了一个感叹号，Git会将满足这类规则的文件添加到版本管理中。为什么要有两种规则呢？
+想象一个场景：假如我们只需要管理/mtk/目录中的one.txt文件，这个目录中的其他文件都不需要管理，那么.gitignore规则应写为：：
+/mtk/*
+!/mtk/one.txt
+ 
+假设我们只有过滤规则，而没有添加规则，那么我们就需要把/mtk/目录下除了one.txt以外的所有文件都写出来！
+注意上面的/mtk/*不能写为/mtk/，否则父目录被前面的规则排除掉了，one.txt文件虽然加了!过滤规则，也不会生效！
+ 
+----------------------------------------------------------------------------------
+还有一些规则如下：
+fd1/*
+说明：忽略目录 fd1 下的全部内容；注意，不管是根目录下的 /fd1/ 目录，还是某个子目录 /child/fd1/ 目录，都会被忽略；
+ 
+/fd1/*
+说明：忽略根目录下的 /fd1/ 目录的全部内容；
+ 
+/*
+!.gitignore
+!/fw/ 
+/fw/*
+!/fw/bin/
+!/fw/sf/
+说明：忽略全部内容，但是不忽略 .gitignore 文件、根目录下的 /fw/bin/ 和 /fw/sf/ 目录；注意要先对bin/的父目录使用!规则，使其不被排除。
+</code></pre>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Hello Gridea]]></title>
+        <id>https://ddddnet.github.io/post/hello-gridea/</id>
+        <link href="https://ddddnet.github.io/post/hello-gridea/">
+        </link>
+        <updated>2018-12-11T16:00:00.000Z</updated>
+        <summary type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
+✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
+✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
+<!-- more -->
+<p><a href="https://github.com/getgridea/gridea">Github</a><br>
+<a href="https://gridea.dev/">Gridea 主页</a><br>
+<a href="https://fehey.com/">示例网站</a></p>
+<h2 id="特性">特性👇</h2>
+<p>📝  你可以使用最酷的 <strong>Markdown</strong> 语法，进行快速创作</p>
+<p>🌉  你可以给文章配上精美的封面图和在文章任意位置插入图片</p>
+<p>🏷️  你可以对文章进行标签分组</p>
+<p>📋  你可以自定义菜单，甚至可以创建外部链接菜单</p>
+<p>💻  你可以在 <strong>Windows</strong>，<strong>MacOS</strong> 或 <strong>Linux</strong> 设备上使用此客户端</p>
+<p>🌎  你可以使用 <strong>𝖦𝗂𝗍𝗁𝗎𝖻 𝖯𝖺𝗀𝖾𝗌</strong> 或 <strong>Coding Pages</strong> 向世界展示，未来将支持更多平台</p>
+<p>💬  你可以进行简单的配置，接入 <a href="https://github.com/gitalk/gitalk">Gitalk</a> 或 <a href="https://github.com/SukkaW/DisqusJS">DisqusJS</a> 评论系统</p>
+<p>🇬🇧  你可以使用<strong>中文简体</strong>或<strong>英语</strong></p>
+<p>🌁  你可以任意使用应用内默认主题或任意第三方主题，强大的主题自定义能力</p>
+<p>🖥  你可以自定义源文件夹，利用 OneDrive、百度网盘、iCloud、Dropbox 等进行多设备同步</p>
+<p>🌱 当然 <strong>Gridea</strong> 还很年轻，有很多不足，但请相信，它会不停向前 🏃</p>
+<p>未来，它一定会成为你离不开的伙伴</p>
+<p>尽情发挥你的才华吧！</p>
+<p>😘 Enjoy~</p>
+]]></content>
+    </entry>
+</feed>
